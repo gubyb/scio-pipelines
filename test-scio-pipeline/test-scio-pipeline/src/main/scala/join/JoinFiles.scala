@@ -1,14 +1,6 @@
 package join
 
 import com.spotify.scio._
-import org.apache.beam.sdk.values.KV
-
-/*
-sbt "runMain [PACKAGE].Joinfiles
-  --project=[PROJECT] --runner=DataflowRunner --zone=[ZONE]
-  --input=gs://dataflow-samples/shakespeare/kinglear.txt
-  --output=gs://[BUCKET]/[PATH]/wordcount"
-*/
 
 object JoinFiles {
   def main(cmdlineArgs: Array[String]): Unit = {
