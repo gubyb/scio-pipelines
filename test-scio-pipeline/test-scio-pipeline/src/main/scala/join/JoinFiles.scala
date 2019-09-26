@@ -42,6 +42,6 @@ object JoinFiles {
       .map(_.values.mkString(","))
       .saveAsTextFile("output/streams", numShards = 0, suffix = ".csv")
 
-    val result = sc.close().waitUntilFinish()
+    sc.close().waitUntilFinish()
   }
 }
